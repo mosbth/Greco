@@ -9,7 +9,7 @@ Dowload it and point browser to index.php. That should be enough.
 An example of a pure standard installation of greco is available here. Review it before moving
 on.
 
-	www.phpersia.org/greco
+  http://www.phpersia.org/greco
 
 
 2. Greco, A small template for websites
@@ -22,7 +22,7 @@ was created to ease for students to see what happens in an irc-channel.
 The main function of the site is to execute the unix-command "tail -100 irc.log". Still, I need a
 bunch of webpages to make it look nice, stylish and usable.
 
-Thats why.
+That's why Greco exists.
 
 
 3. Greco lives?

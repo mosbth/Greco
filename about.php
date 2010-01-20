@@ -51,7 +51,7 @@ EOD;
 //
 // Create and print out the html-page
 //
-$title 		= "Home page (edit this)";
+$title 		= "About Greco";
 require_once('page.php');
 
 

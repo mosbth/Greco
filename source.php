@@ -94,7 +94,7 @@ $list = Array();
 if(is_dir($dir)) {
     if ($dh = opendir($dir)) {
         while (($file = readdir($dh)) !== false) {
-        	if($file != '.' && $file != '..' && $file != '.svn') {
+        	if($file != '.' && $file != '..' && $file != '.svn' && $file != '.git') {
         		$curfile = $fullpath . $SEPARATOR . $file;
         		if(is_dir($curfile)) {
           	  		$list[$file] = "<a href='{$HREF}dir={$curdir1}{$file}'>{$file}{$SEPARATOR}</a>";
