@@ -127,7 +127,7 @@ if(isset($_GET['file'])) {
 	$file = basename($_GET['file']);
 
 	// Get the content of the file
-	$content = file_get_contents($dir . $SEPARATOR . $file, 'FILE_TEXT');
+	$content = htmlspecialchars(file_get_contents($dir . $SEPARATOR . $file, 'FILE_TEXT'));
 
 	// Remove password and user from config.php, if enabled
 	if($HIDE_DB_USER_PASSWORD == TRUE && $file == 'config.php') {
