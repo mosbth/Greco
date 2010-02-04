@@ -45,11 +45,60 @@ div.copyright pre {
 
 
 /* -------------------------------------------------------------------------------------
-/* header styles */
-h1 {
-	margin-top: 50px;
+/* header & paragraph styles */
+p.small {
+	font-size: x-small;
 }
 
+p.intendent {
+	padding-left: 2em;
+}
+
+div.revisionhistory {
+	float: right;
+	border-left: solid 1px #dddddd;
+	padding-left: 1em;
+	font-size: x-small;
+}
+
+
+/* -------------------------------------------------------------------------------------
+/* numbering the headers h2-h4 */
+h1 {
+	counter-reset: header2, header3, header4;
+}
+h2.number:before { 
+  counter-increment: header2; 
+  content: counter(header2) ". "; 
+} 
+
+h2.number { 
+  counter-reset: header3 header4; 
+} 
+
+h3.number:before { 
+  counter-increment: header3; 
+  content: counter(header2) "." counter(header3) ". "; 
+} 
+
+h3.number { 
+  counter-reset: header4; 
+} 
+
+h4.number:before { 
+  counter-increment: header4; 
+  content: counter(header2) "." counter(header3) "." counter(header4) ". "; 
+} 
+
+
+/* -------------------------------------------------------------------------------------
+/* Style for displaying lines of code */
+div.code {
+	font-family: monospace;
+	border: solid 1px #999999;
+	background: #eeeeee;
+	padding: 1em;
+}
 
 /* -------------------------------------------------------------------------------------
 /* Style for links */
