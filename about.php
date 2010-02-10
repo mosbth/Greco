@@ -39,11 +39,11 @@ $html = <<<EOD
 The following text is from the file README.
 </p>
 </header>
-<page>
+<article>
 <pre>
 {$readme}
 </pre>
-</page>
+</article>
 EOD;
 
 
