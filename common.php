@@ -17,6 +17,7 @@ $header = <<<EOD
 <nav class='top'>
 <ul>
 <li><a href="index.php">Home</a>
+<li><a href="http://github.com/mosbth/Greco">GitHub</a>
 <li><a href="template.php">Template</a>
 <li><a href='source.php'>Sourcecode</a>
 <li><a href='about.php'>About</a>
@@ -58,7 +59,9 @@ $footer = <<<EOD
 	<li><a href='http://validator.w3.org/check/referer'>XHTML</a>
 	<li><a href='http://validator.w3.org/checklink?uri={$refToThisPage}'>Links</a>
 	<li><a href='http://html5.validator.nu/?doc={$refToThisPage}'>HTML5</a>
-	</ul>
+	<li><a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a>
+	<li><a href="http://www.w3.org/2009/cheatsheet/">CheatSheet</a>
+</ul>
 </nav>
 EOD;
 
